@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+html{
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h1{
+    text-align: center;
+}
+a.btnA {
+    display: flex;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 1.3rem 2rem;
+    border: 2px solid #014897; background: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    }
+    a.btnA:hover {
+    background-color: #e9f3fd;
+    }
+    a.btnA.text {
+    display: block;
+    flex-grow: 1;
+    color: #004386;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    padding-right: 15px;
+    font-size: 23px;
+    }
+    a.btnA .text:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(45deg);
+    border-top: 3px solid #014897;
+    border-right: 3px solid #014897;
+    box-sizing: border-box;
+    width: 14px;
+    height: 14px;
+    transition: 0.3s;
+    }
+    @media (max-width: 1200px) {
+    a.btnA .text {
+    font-size: 18px;
+    padding-right: 20px;
+    }
+    a.btnA.text::after {
+    width: 12px;
+    height: 12px;
+    }
+    }
+    @media (max-width: 736px) {
+    a.btnA.text {
+    font-size: 14px;
+    padding-right: 20px;
+    }
+    a.btnA.text::after {
+    width: 10px;
+    height: 10px;
+    }
+}
